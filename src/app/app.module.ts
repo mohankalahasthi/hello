@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { WelcomeNavComponent } from './components/welcome-nav/welcome-nav.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    WelcomeNavComponent,
   ],
   imports: [
     BrowserModule,
