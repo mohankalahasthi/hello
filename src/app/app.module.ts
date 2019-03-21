@@ -1,19 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FlexLayoutModule} from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
-import { WelcomeNavComponent } from './components/welcome-nav/welcome-nav.component';
+
+
+import { SharedModule } from './shared/shared.module';
+import { WelcomeModule } from './containers/welcome/welcome.module';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeNavComponent,
+
   ],
   imports: [
     BrowserModule,
-    FlexLayoutModule
+    SharedModule,
+    WelcomeModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

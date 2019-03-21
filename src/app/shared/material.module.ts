@@ -91,4 +91,4 @@ import { DragDropModule } from "@angular/cdk/drag-drop";
     DragDropModule
   ]
 })
-export class MaterialModule {}
+export class MaterialModule { }
